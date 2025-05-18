@@ -1,0 +1,52 @@
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.table img {
+    max-width: 100px;
+    height: auto;
+}
+
+#detectionResults {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.qr-code-cell img {
+    max-width: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.qr-code-cell img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .camera-container {
+        max-width: 100%;
+    }
+    
+    .table-responsive {
+        font-size: 0.9em;
+    }
+}
